@@ -1,0 +1,62 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bg {
+   
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #maincont {
+    height: inherit;
+}
+  
+  #mainrow{
+    height: inherit;
+  }
+
+  #ikona_menu{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #ikona_menu:hover{
+    cursor: pointer;
+  }
+
+  #btnrev{
+    position: absolute;
+    left: 30px;
+  }
+
+  #btnrev:hover{
+    cursor: pointer;
+  }
+
+  #btnfor{
+    position: absolute;
+    right: 30px;
+  }
+
+  #btnfor:hover{
+    cursor: pointer;
+  }
+
+  #home{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+
+  #home:hover{
+    cursor: pointer;
+  }
