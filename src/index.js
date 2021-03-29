@@ -70,11 +70,12 @@ var app = new Vue({
   methods: {
     ikon1change1: function () {
       this.ikon1.hover = false;
-      this.appbackground.src = planszeA[0];
+      this.appbackground.src = backgrounds[1];
       this.ikon2.seen = false;
       this.ikon3.seen = false;
       this.buttonreverse1.seen = true;
       this.buttonforward1.seen = true;
+      this.video.seen = true;
       this.homeicon.seen = true;
     },
     ikon2change1: function () {

@@ -19,7 +19,7 @@
           <img class="img-fluid" id="ikona_menu" :src="ikon1.src2" v-if="ikon1.hover" v-on:click="ikon1change1"
             @mouseover="ikon1.hover=true; ikon1.seen=false" @mouseleave=" ikon1.seen=true; ikon1.hover = false;">
 
-      
+      <!--
           <button type="button" class="btn btn-primary" id="btnrev" v-if="buttonreverse1.seen" @click="btnrevA">
             <<<<
           </button>
@@ -29,7 +29,7 @@
           <button type="button" class="btn btn-primary" id="btnrev" v-if="buttonreverse3.seen" @click="btnrevC">   
             <<<<     
           </button>            
-        
+        -->
       </div>
 
       <div class="col-sm">
@@ -51,6 +51,7 @@
         <img class="img-fluid" id="ikona_menu" :src="ikon3.src2" v-if="ikon3.hover" v-on:click="ikon3change1"
           @mouseover="ikon3.hover=true; ikon3.seen=false" @mouseleave=" ikon3.seen=true; ikon3.hover = false;">
 
+          <!--
           <button type="button" id="btnfor" class="btn btn-primary" v-if="buttonforward1.seen" v-on:click="btnforA">
             >>>>
           </button>         
@@ -60,6 +61,7 @@
           <button type="button" id="btnfor" class="btn btn-primary" v-if="buttonforward3.seen" v-on:click="btnforC">
             >>>>
           </button>
+          -->
           <img id="home" :src="homeicon.src" v-if="homeicon.seen" 
           @mouseover="homeicon.hover=true; homeicon.seen=false" @mouseleave=" homeicon.seen=true; homeicon.hover = false;">
           <img id="home" :src="homeicon.src2" v-if="homeicon.hover" v-on:click="home_click"
