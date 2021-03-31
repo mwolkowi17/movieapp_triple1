@@ -21,9 +21,7 @@
 
       
           
-          <button type="button" class="btn btn-primary" id="btnrev" v-if="buttonreverse2.seen" @click="btnrevB">
-            <<<< 
-          </button>        
+             
           <button type="button" class="btn btn-primary" id="btnrev" v-if="buttonreverse3.seen" @click="btnrevC">   
             <<<<     
           </button>            
@@ -58,11 +56,17 @@
            Wróc do filmu
           </button>  
           <button type="button" id="btnfor" class="btn btn-primary" v-if="buttonforward2.seen" v-on:click="btnforB">
-            >>>>
+            Komentarz eksperta
           </button> 
+          <!--<button type="button" class="btn btn-primary" id="btnfor" v-if="buttonreverse2.seen" @click="btnrevB">
+            Wróc do filmu
+          </button>  -->
           <button type="button" id="btnfor" class="btn btn-primary" v-if="buttonforward3.seen" v-on:click="btnforC">
-            >>>>
+            Komentarz eksperta
           </button>
+          <!--<button type="button" class="btn btn-primary" id="btnfor" v-if="buttonreverse3.seen" @click="btnrevC">   
+            Wróc do filmu   
+          </button>   -->
           
           <img id="home" :src="homeicon.src" v-if="homeicon.seen" 
           @mouseover="homeicon.hover=true; homeicon.seen=false" @mouseleave=" homeicon.seen=true; homeicon.hover = false;">
