@@ -1,7 +1,7 @@
 export const ikonyglowne = {
-    first: "./images/hejt_cz1.png",
+    first: "./images/dopalacze.jpg",
     firtscliced: "./images/hejt_cz1clicked.png",
-    second: "./images/hejt_cz2.png",
+    second: "./images/dopalacze_multimedia.png",
     secondcliced: "./images/hejt_cz2clicked.png",
     third: "./images/hejt_cz3.png",
     thirdcliced: "./images/hejt_cz3clicked.png",

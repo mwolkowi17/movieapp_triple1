@@ -37,7 +37,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"ikonyglowne\": () => (/* binding */ ikonyglowne)\n/* harmony export */ });\nconst ikonyglowne = {\r\n    first: \"./images/hejt_cz1.png\",\r\n    firtscliced: \"./images/hejt_cz1clicked.png\",\r\n    second: \"./images/hejt_cz2.png\",\r\n    secondcliced: \"./images/hejt_cz2clicked.png\",\r\n    third: \"./images/hejt_cz3.png\",\r\n    thirdcliced: \"./images/hejt_cz3clicked.png\",\r\n    home:\"./images/home.png\",\r\n    homeclicked:\"./images/home_clicked.png\"\r\n}\n\n//# sourceURL=webpack://movieapp_triple1/./src/icons.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"ikonyglowne\": () => (/* binding */ ikonyglowne)\n/* harmony export */ });\nconst ikonyglowne = {\r\n    first: \"./images/dopalacze.jpg\",\r\n    firtscliced: \"./images/hejt_cz1clicked.png\",\r\n    second: \"./images/dopalacze_multimedia.png\",\r\n    secondcliced: \"./images/hejt_cz2clicked.png\",\r\n    third: \"./images/hejt_cz3.png\",\r\n    thirdcliced: \"./images/hejt_cz3clicked.png\",\r\n    home:\"./images/home.png\",\r\n    homeclicked:\"./images/home_clicked.png\"\r\n}\n\n//# sourceURL=webpack://movieapp_triple1/./src/icons.js?");
 
 /***/ }),
 
