@@ -74,7 +74,7 @@ var app = new Vue({
       this.appbackground.src = backgrounds[1];
       this.ikon2.seen = false;
       this.ikon3.seen = false;
-      this.buttonreverse1.seen = true;
+      //this.buttonreverse1.seen = true;
       this.buttonforward1.seen = true;
       this.video.seen = true;
       this.video.src = videoSources[0];
@@ -105,29 +105,14 @@ var app = new Vue({
     
     
 
-    
+     this.buttonreverse1.seen = true;
      this.buttonforward1.seen = false;
      
     },
     btnrevA: function () {
-      if (this.licznik.planszeAlicz != 0) {
-        this.licznik.planszeAlicz--;
-      }
-      this.appbackground.src = planszeA[this.licznik.planszeAlicz];
-      if (this.appbackground.src === planszeA[0]) {
-        this.appbackground.src = backgrounds[0];
-        this.ikon1.seen = true;
-        this.ikon2.seen = true;
-        this.ikon3.seen = true;
-        this.buttonreverse1.seen = false;
-        this.buttonforward1.seen = false;
-        this.homeicon.seen = false;
-        this.licznik.planszeAlicz = 0;
-      }
-
-      if (this.video.seen === true) {
-        this.video.seen = false;
-      }
+    this.video.src=videoSources[0];
+    this.buttonforward1.seen = true;
+    this.buttonreverse1.seen = false;
 
     },
     btnforB: function () {
