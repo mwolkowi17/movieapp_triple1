@@ -38,11 +38,12 @@
         <img class="img-fluid" id="ikona_menu" :src="ikon2.src2" v-if="ikon2.hover" v-on:click="ikon2change1"
           @mouseover="ikon2.hover=true; ikon2.seen=false" @mouseleave=" ikon2.seen=true; ikon2.hover = false;">
 
-        <video width="720" height="480" controls v-if="video.seen">
-          <source :src="video.src" type="video/mp4">
+        <video width="720" height="480" :src="video.src" controls v-if="video.seen">
+         
 
           Your browser does not support the video tag.
         </video>
+       
       </div>
 
       <div class="col-sm">

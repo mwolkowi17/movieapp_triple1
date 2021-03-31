@@ -40,7 +40,8 @@ var app = new Vue({
       video: {
 
         src: "",
-        seen: false
+        seen: false,
+       
       },
       buttonforward1: {
         seen: false
@@ -76,7 +77,7 @@ var app = new Vue({
       this.buttonreverse1.seen = true;
       this.buttonforward1.seen = true;
       this.video.seen = true;
-      //this.video.src = videoSources[0];
+      this.video.src = videoSources[0];
       this.homeicon.seen = true;
     },
     ikon2change1: function () {
@@ -100,10 +101,13 @@ var app = new Vue({
       this.homeicon.seen = true;
     },
     btnforA: function () {
-     this.video.seen=false;
-     this.video.src= videoSources[2];
-     this.video.seen=true;
+     this.video.src=videoSources[2];
+    
+    
+
+    
      this.buttonforward1.seen = false;
+     
     },
     btnrevA: function () {
       if (this.licznik.planszeAlicz != 0) {
