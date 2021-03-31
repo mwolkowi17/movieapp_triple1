@@ -36,6 +36,7 @@ body, html {
   #btnrev{
     position: absolute;
     left: 30px;
+    bottom: 120px;
   }
 
   #btnrev:hover{
@@ -44,7 +45,8 @@ body, html {
 
   #btnfor{
     position: absolute;
-    right: 30px;
+    right: 50px;
+    bottom: 120px;
   }
 
   #btnfor:hover{

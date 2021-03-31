@@ -20,9 +20,7 @@
             @mouseover="ikon1.hover=true; ikon1.seen=false" @mouseleave=" ikon1.seen=true; ikon1.hover = false;">
 
       
-          <button type="button" class="btn btn-primary" id="btnrev" v-if="buttonreverse1.seen" @click="btnrevA">
-            <<<<
-          </button>
+          
           <button type="button" class="btn btn-primary" id="btnrev" v-if="buttonreverse2.seen" @click="btnrevB">
             <<<< 
           </button>        
@@ -54,8 +52,11 @@
 
           
           <button type="button" id="btnfor" class="btn btn-primary" v-if="buttonforward1.seen" v-on:click="btnforA">
-            >>>>
-          </button>         
+            Komentarz eksperta
+          </button>       
+          <button type="button" class="btn btn-primary" id="btnfor" v-if="buttonreverse1.seen" @click="btnrevA">
+           Wróc do filmu
+          </button>  
           <button type="button" id="btnfor" class="btn btn-primary" v-if="buttonforward2.seen" v-on:click="btnforB">
             >>>>
           </button> 
