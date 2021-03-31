@@ -4,7 +4,7 @@ import { ikonyglowne } from './icons.js';
 import { planszeA } from './planszeAdane.js';
 import { planszeB } from './planszeBdane.js';
 import { planszeC } from './planszeCdane.js';
-
+import {videoSources} from './videoData';
 var app = new Vue({
   el: '#app',
   data: () => {
@@ -76,6 +76,7 @@ var app = new Vue({
       this.buttonreverse1.seen = true;
       this.buttonforward1.seen = true;
       this.video.seen = true;
+      //this.video.src = videoSources[0];
       this.homeicon.seen = true;
     },
     ikon2change1: function () {
@@ -99,24 +100,10 @@ var app = new Vue({
       this.homeicon.seen = true;
     },
     btnforA: function () {
-      this.licznik.planszeAlicz++;
-      this.appbackground.src = planszeA[this.licznik.planszeAlicz];
-      if (this.licznik.planszeAlicz === 8) {
-        this.appbackground.src = backgrounds[1];
-        this.video.seen = true;
-      }
-      if (this.licznik.planszeAlicz === 9) {
-        this.licznik.planszeAlicz = 0;
-        this.video.seen = false;
-        this.appbackground.src = backgrounds[0];
-        this.buttonreverse1.seen = false;
-        this.buttonforward1.seen = false;
-        this.ikon1.seen = true;
-        this.ikon2.seen = true;
-        this.ikon3.seen = true;
-        this.homeicon.seen = false;
-
-      }
+     this.video.seen=false;
+     this.video.src= videoSources[2];
+     this.video.seen=true;
+     this.buttonforward1.seen = false;
     },
     btnrevA: function () {
       if (this.licznik.planszeAlicz != 0) {
