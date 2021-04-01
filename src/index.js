@@ -86,7 +86,8 @@ var app = new Vue({
       this.ikon1.seen = false;
       this.ikon3.seen = false;
       this.video.seen = true;
-      this.buttonreverse2.seen = true;
+      this.video.src = videoSources[3];
+      //this.buttonreverse2.seen = true;
       this.buttonforward2.seen = true;
       this.homeicon.seen = true;
     },
@@ -96,15 +97,13 @@ var app = new Vue({
       this.ikon1.seen = false;
       this.ikon2.seen = false;
       this.video.seen = true;
+      this.video.src = videoSources[5];
       this.buttonreverse3.seen = true;
       this.buttonforward3.seen = true;
       this.homeicon.seen = true;
     },
     btnforA: function () {
      this.video.src=videoSources[2];
-    
-    
-
      this.buttonreverse1.seen = true;
      this.buttonforward1.seen = false;
      
@@ -116,59 +115,14 @@ var app = new Vue({
 
     },
     btnforB: function () {
-      if (this.video.seen === false) {
-        this.licznik.planszeBlicz++;
-        this.appbackground.src = planszeB[this.licznik.planszeBlicz];
-      }
-
-      if (this.licznik.planszeBlicz === 0) {
-        this.video.seen = false;
-        this.appbackground.src = planszeB[0];
-      }
-
-      if (this.licznik.planszeBlicz === 1) {
-        this.licznik.planszeBlicz = 0;
-        this.appbackground.src = backgrounds[0];
-        this.ikon1.seen = true;
-        this.ikon2.seen = true;
-        this.ikon3.seen = true;
-        this.buttonreverse2.seen = false;
-        this.buttonforward2.seen = false;
-        this.homeicon.seen = false;
-
-      }
+     this.video.src=videoSources[4];
+     this.buttonreverse2.seen = true;
+     this.buttonforward2.seen = false;
     },
     btnrevB: function () {
-      if (this.licznik.planszeBlicz != 0) {
-        this.licznik.planszeBlicz--;
-
-      }
-
-      if (this.video.seen === true) {
-        this.video.seen = false;
-        this.appbackground.src = backgrounds[0];
-        this.ikon1.seen = true;
-        this.ikon2.seen = true;
-        this.ikon3.seen = true;
-        this.buttonreverse2.seen = false;
-        this.buttonforward2.seen = false;
-        this.homeicon.seen = false;
-      }
-
-      if (this.appbackground.src === planszeB[0]) {
-        this.appbackground.src = backgrounds[1];
-        this.video.seen = true;
-        this.licznik.planszeBlicz = 0;
-      }
-
-      if (this.appbackground.src != backgrounds[0]) {
-        this.appbackground.src = planszeB[this.licznik.planszBClicz]
-        if (this.video.seen === true) {
-          this.appbackground.src = backgrounds[1];
-        }
-      }
-
-
+      this.video.src=videoSources[3];
+    this.buttonforward2.seen = true;
+    this.buttonreverse2.seen = false;
     },
     btnforC: function () {
       if (this.video.seen === false) {
