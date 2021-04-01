@@ -22,9 +22,9 @@
       
           
              
-          <button type="button" class="btn btn-primary" id="btnrev" v-if="buttonreverse3.seen" @click="btnrevC">   
+         <!--<button type="button" class="btn btn-primary" id="btnrev" v-if="buttonreverse3.seen" @click="btnrevC">   
             <<<<     
-          </button>            
+          </button>     -->        
        
       </div>
 
@@ -64,9 +64,9 @@
           <button type="button" id="btnfor" class="btn btn-primary" v-if="buttonforward3.seen" v-on:click="btnforC">
             Komentarz eksperta
           </button>
-          <!--<button type="button" class="btn btn-primary" id="btnfor" v-if="buttonreverse3.seen" @click="btnrevC">   
+          <button type="button" class="btn btn-primary" id="btnfor" v-if="buttonreverse3.seen" @click="btnrevC">   
             Wróc do filmu   
-          </button>   -->
+          </button>   
           
           <img id="home" :src="homeicon.src" v-if="homeicon.seen" 
           @mouseover="homeicon.hover=true; homeicon.seen=false" @mouseleave=" homeicon.seen=true; homeicon.hover = false;">

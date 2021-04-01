@@ -98,7 +98,7 @@ var app = new Vue({
       this.ikon2.seen = false;
       this.video.seen = true;
       this.video.src = videoSources[5];
-      this.buttonreverse3.seen = true;
+      //this.buttonreverse3.seen = true;
       this.buttonforward3.seen = true;
       this.homeicon.seen = true;
     },
@@ -125,58 +125,17 @@ var app = new Vue({
     this.buttonreverse2.seen = false;
     },
     btnforC: function () {
-      if (this.video.seen === false) {
-        this.licznik.planszeClicz++;
-        this.appbackground.src = planszeC[this.licznik.planszeClicz]
-      }
-
-      if (this.licznik.planszeClicz === 0) {
-        this.video.seen = false;
-        this.appbackground.src = planszeC[0];
-      }
-
-      if (this.licznik.planszeClicz === 6) {
-        this.licznik.planszeClicz = 0;
-        this.appbackground.src = backgrounds[0];
-        this.ikon1.seen = true;
-        this.ikon2.seen = true;
-        this.ikon3.seen = true;
-        this.buttonreverse3.seen = false;
-        this.buttonforward3.seen = false;
-        this.homeicon.seen = false;
-
-      }
+      this.video.src=videoSources[6];
+      this.buttonreverse3.seen = true;
+      this.buttonforward3.seen = false;
 
 
     },
     btnrevC: function () {
-      if (this.licznik.planszeClicz != 0) {
-        this.licznik.planszeClicz--;
-      }
-
-      if (this.video.seen === true) {
-        this.video.seen = false;
-        this.appbackground.src = backgrounds[0];
-        this.ikon1.seen = true;
-        this.ikon2.seen = true;
-        this.ikon3.seen = true;
-        this.buttonreverse3.seen = false;
-        this.buttonforward3.seen = false;
-        this.homeicon.seen = false;
-      }
-
-      if (this.appbackground.src === planszeC[0]) {
-        this.appbackground.src = backgrounds[1];
-        this.video.seen = true;
-        this.licznik.planszeClicz = 0;
-      }
-
-      if (this.appbackground.src != backgrounds[0]) {
-        this.appbackground.src = planszeC[this.licznik.planszeClicz]
-        if (this.video.seen === true) {
-          this.appbackground.src = backgrounds[1];
-        }
-      }
+   
+      this.video.src=videoSources[5];
+    this.buttonforward3.seen = true;
+    this.buttonreverse3.seen = false;
 
     },
     home_click: function () {
