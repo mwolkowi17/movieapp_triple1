@@ -1,18 +1,11 @@
 import Vue from 'vue/dist/vue.js';
-import { backgrounds } from './backgroundData.js';
 import { ikonyglowne } from './icons.js';
-import { planszeA } from './planszeAdane.js';
-import { planszeB } from './planszeBdane.js';
-import { planszeC } from './planszeCdane.js';
 import {videoSources} from './videoData';
 var app = new Vue({
   el: '#app',
   data: () => {
     return {
-      message: "hello vue",
-      appbackground: {
-        src: backgrounds[0]
-      },
+     
       ikon1: {
         src: ikonyglowne.first,
         src2: ikonyglowne.firtscliced,
@@ -61,11 +54,7 @@ var app = new Vue({
       buttonreverse3: {
         seen: false
       },
-      licznik: {
-        planszeAlicz: 0,
-        planszeBlicz: 0,
-        planszeClicz: 0
-      }
+      
     }
   },
   methods: {
@@ -139,11 +128,9 @@ var app = new Vue({
 
     },
     home_click: function () {
-      this.licznik.planszeAlicz = 0;
-      this.licznik.planszBClicz = 0;
-      this.licznik.planszeClicz = 0;
+     
       this.video.seen = false;
-      this.appbackground.src = backgrounds[0];
+      
       this.buttonreverse1.seen = false;
       this.buttonforward1.seen = false;
       this.buttonreverse2.seen = false;
