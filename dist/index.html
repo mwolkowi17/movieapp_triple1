@@ -18,65 +18,56 @@
             @mouseover="ikon1.hover=true; ikon1.seen=false" @mouseleave=" ikon1.seen=true; ikon1.hover = false;">
           <img class="img-fluid" id="ikona_menu" :src="ikon1.src2" v-if="ikon1.hover" v-on:click="ikon1change1"
             @mouseover="ikon1.hover=true; ikon1.seen=false" @mouseleave=" ikon1.seen=true; ikon1.hover = false;">
+        </div>
 
-      
-          
-             
-         <!--<button type="button" class="btn btn-primary" id="btnrev" v-if="buttonreverse3.seen" @click="btnrevC">   
-            <<<<     
-          </button>     -->        
-       
-      </div>
+        <div class="col-sm">
+          <img class="img-fluid" id="ikona_menu" :src="ikon2.src" v-if="ikon2.seen"
+            @mouseover="ikon2.hover=true; ikon2.seen=false" @mouseleave=" ikon2.seen=true; ikon2.hover = false;">
+          <img class="img-fluid" id="ikona_menu" :src="ikon2.src2" v-if="ikon2.hover" v-on:click="ikon2change1"
+            @mouseover="ikon2.hover=true; ikon2.seen=false" @mouseleave=" ikon2.seen=true; ikon2.hover = false;">
 
-      <div class="col-sm">
-        <img class="img-fluid" id="ikona_menu" :src="ikon2.src" v-if="ikon2.seen"
-          @mouseover="ikon2.hover=true; ikon2.seen=false" @mouseleave=" ikon2.seen=true; ikon2.hover = false;">
-        <img class="img-fluid" id="ikona_menu" :src="ikon2.src2" v-if="ikon2.hover" v-on:click="ikon2change1"
-          @mouseover="ikon2.hover=true; ikon2.seen=false" @mouseleave=" ikon2.seen=true; ikon2.hover = false;">
+          <video width="720" height="480" :src="video.src" controls v-if="video.seen">
 
-        <video width="720" height="480" :src="video.src" controls v-if="video.seen">
-         
 
-          Your browser does not support the video tag.
-        </video>
-       
-      </div>
+            Your browser does not support the video tag.
+          </video>
 
-      <div class="col-sm">
-        <img class="img-fluid" id="ikona_menu" :src="ikon3.src" v-if="ikon3.seen"
-          @mouseover="ikon3.hover=true; ikon3.seen=false" @mouseleave=" ikon3.seen=true; ikon3.hover = false;">
-        <img class="img-fluid" id="ikona_menu" :src="ikon3.src2" v-if="ikon3.hover" v-on:click="ikon3change1"
-          @mouseover="ikon3.hover=true; ikon3.seen=false" @mouseleave=" ikon3.seen=true; ikon3.hover = false;">
+        </div>
 
-          
+        <div class="col-sm">
+          <img class="img-fluid" id="ikona_menu" :src="ikon3.src" v-if="ikon3.seen"
+            @mouseover="ikon3.hover=true; ikon3.seen=false" @mouseleave=" ikon3.seen=true; ikon3.hover = false;">
+          <img class="img-fluid" id="ikona_menu" :src="ikon3.src2" v-if="ikon3.hover" v-on:click="ikon3change1"
+            @mouseover="ikon3.hover=true; ikon3.seen=false" @mouseleave=" ikon3.seen=true; ikon3.hover = false;">
+
+
           <button type="button" id="btnfor" class="btn btn-primary" v-if="buttonforward1.seen" v-on:click="btnforA">
             Komentarz eksperta
-          </button>       
+          </button>
           <button type="button" class="btn btn-primary" id="btnfor" v-if="buttonreverse1.seen" @click="btnrevA">
-           Wróc do filmu
-          </button>  
+            Wróc do filmu
+          </button>
           <button type="button" id="btnfor" class="btn btn-primary" v-if="buttonforward2.seen" v-on:click="btnforB">
             Komentarz eksperta
-          </button> 
+          </button>
           <button type="button" class="btn btn-primary" id="btnfor" v-if="buttonreverse2.seen" @click="btnrevB">
             Wróc do filmu
           </button>
           <button type="button" id="btnfor" class="btn btn-primary" v-if="buttonforward3.seen" v-on:click="btnforC">
             Komentarz eksperta
           </button>
-          <button type="button" class="btn btn-primary" id="btnfor" v-if="buttonreverse3.seen" @click="btnrevC">   
-            Wróc do filmu   
-          </button>   
-          
-          <img id="home" :src="homeicon.src" v-if="homeicon.seen" 
-          @mouseover="homeicon.hover=true; homeicon.seen=false" @mouseleave=" homeicon.seen=true; homeicon.hover = false;">
+          <button type="button" class="btn btn-primary" id="btnfor" v-if="buttonreverse3.seen" @click="btnrevC">
+            Wróc do filmu
+          </button>
+
+          <img id="home" :src="homeicon.src" v-if="homeicon.seen" @mouseover="homeicon.hover=true; homeicon.seen=false"
+            @mouseleave=" homeicon.seen=true; homeicon.hover = false;">
           <img id="home" :src="homeicon.src2" v-if="homeicon.hover" v-on:click="home_click"
-          @mouseover="homeicon.hover=true; homeicon.seen=false" @mouseleave=" homeicon.seen=true; homeicon.hover = false;">
-
-
+            @mouseover="homeicon.hover=true; homeicon.seen=false"
+            @mouseleave=" homeicon.seen=true; homeicon.hover = false;">
+        </div>
       </div>
     </div>
-  </div>
   </div>
 
   <script src="bundle.js"></script>
