@@ -71,10 +71,10 @@ var app = new Vue({
   methods: {
     ikon1change1: function () {
       this.ikon1.hover = false;
-      //this.appbackground.src = backgrounds[1];
+     
       this.ikon2.seen = false;
       this.ikon3.seen = false;
-      //this.buttonreverse1.seen = true;
+     
       this.buttonforward1.seen = true;
       this.video.seen = true;
       this.video.src = videoSources[0];
@@ -82,23 +82,23 @@ var app = new Vue({
     },
     ikon2change1: function () {
       this.ikon2.hover = false;
-      //this.appbackground.src = backgrounds[1];
+     
       this.ikon1.seen = false;
       this.ikon3.seen = false;
       this.video.seen = true;
       this.video.src = videoSources[3];
-      //this.buttonreverse2.seen = true;
+     
       this.buttonforward2.seen = true;
       this.homeicon.seen = true;
     },
     ikon3change1: function () {
       this.ikon3.hover = false;
-      //this.appbackground.src = backgrounds[1];
+     
       this.ikon1.seen = false;
       this.ikon2.seen = false;
       this.video.seen = true;
       this.video.src = videoSources[5];
-      //this.buttonreverse3.seen = true;
+      
       this.buttonforward3.seen = true;
       this.homeicon.seen = true;
     },
